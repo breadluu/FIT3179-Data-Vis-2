@@ -1,0 +1,28 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "../data/ao_attendance_2000_2025.csv"},
+  "width": 600,
+  "height": 300,
+  "mark": {
+    "type": "line",
+    "color": "#4CAF50", 
+    "point": true
+  },
+  "encoding": {
+    "x": {
+      "field": "year", 
+      "type": "ordinal", 
+      "title": "Year"
+    },
+    "y": {
+      "field": "ao_total_attendance", 
+      "type": "quantitative", 
+      "title": "Total Attendance"
+    },
+    "tooltip": [
+      {"field": "year", "title": "Year: "},
+      {"field": "ao_total_attendance", "title": "Attendance: ", "format":","}
+    ]
+  },
+  "title": {"text": "Australian Open Attendance (2015–2025)", "fontSize": 16}
+}

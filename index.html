@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tennis in Australia Data Visualisation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Tennis in Australia – National Trends & Insights (2015–2025)</h1>
+  </header>
+
+  <main>
+    <section class="chart-section left-text">
+      <div class="chart-text">
+        <div class="text-header">
+          <div class="accent-bar blue"></div>
+          <i data-lucide="map-pin"></i>
+          <h2>National Tennis Venues Map</h2>
+        </div>
+        <p>This map highlights major tennis venues across Australia, coloured by surface type. 
+          The state outlines and abbreviations help compare distribution and accessibility of courts nationwide.</p>
+      </div>
+      <div class="chart-container" id="map"></div>
+    </section>
+
+    <section class="chart-section right-text">
+      <div class="chart-container" id="timeline"></div>
+      <div class="chart-text">
+        <div class="text-header">
+          <div class="accent-bar purple"></div>
+          <i data-lucide="clock"></i>
+          <h2>Australian Open Surface Timeline</h2>
+        </div>
+        <p>Tracks the evolution of the Australian Open’s court surfaces from 1905 to 2025
+          — from the classic Kooyong grass to today’s GreenSet surface at Melbourne Park.</p>
+      </div>
+    </section>
+
+    <section class="chart-section left-text">
+      <div class="chart-text">
+        <div class="text-header">
+          <div class="accent-bar green"></div>
+          <i data-lucide="users"></i>
+          <h2>Australian Open Attendance Over Time</h2>
+        </div>
+        <p>This chart visualises annual attendance trends, showing the growing popularity 
+          of the tournament and key drops during global disruptions like COVID-19.</p>
+      </div>
+      <div class="chart-container" id="attendance"></div>
+    </section>
+
+    <section class="chart-section right-text">
+      <div class="chart-container" id="prizemoney"></div>
+      <div class="chart-text">
+        <div class="text-header">
+          <div class="accent-bar gold"></div>
+          <i data-lucide="trophy"></i>
+          <h2>Total Prize Money Growth</h2>
+        </div>
+        <p>Displays the sharp increase in total prize money since 2015, illustrating the tournament’s 
+          financial growth and the rising value of professional tennis in Australia.</p>
+      </div>
+    </section>
+
+    <section class="chart-section left-text">
+      <div class="chart-text">
+        <div class="text-header">
+          <div class="accent-bar pink"></div>
+          <i data-lucide="user"></i>
+          <h2>Player Rankings, Age & Prize Money</h2>
+        </div>
+        <p>This bubble chart compares Australian players’ ages, total earnings, and career-high rankings, 
+          giving insight into peak performance stages and financial success.</p>
+      </div>
+      <div class="chart-container" id="bubble"></div>
+    </section>
+
+    <section class="chart-section right-text">
+      <div class="chart-container" id="matchtime"></div>
+      <div class="chart-text">
+        <div class="text-header">
+          <div class="accent-bar red"></div>
+          <i data-lucide="stopwatch"></i>
+          <h2>Average Match Duration by Round</h2>
+        </div>
+        <p>Compares match duration trends for men and women through each round of the 2025 Australian Open. 
+          The stacked line chart highlights how match intensity builds toward the finals.</p>
+      </div>
+    </section>
+
+    <section class="chart-section left-text">
+      <div class="chart-text">
+        <div class="text-header">
+          <div class="accent-bar teal"></div>
+          <i data-lucide="award"></i>
+          <h2>Gender Distribution & Grand Slam Success</h2>
+        </div>
+        <p>Combines gender representation among Australian professionals with historical Grand Slam singles 
+          victories, showing balance and legacy across decades.</p>
+      </div>
+      <div class="chart-container" id="genderwinners"></div>
+    </section>
+  </main>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>

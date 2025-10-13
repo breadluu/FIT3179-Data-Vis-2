@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "../data/player_age_vs_prize_money_aus.csv"},
+  "width": 500,
+  "height": 300,
+  "background": "white",
+  "layer": [
+    {
+      "mark": {
+        "type": "circle", 
+        "opacity": 0.8, 
+        "stroke": "#fff", 
+        "strokeWidth": 1},
+      "encoding": {
+        "x": {
+          "field": "age_years_as_of_2025_10_13",
+          "type": "quantitative",
+          "title": "Age (Years)",
+          "scale":{"domain":[23,34]}
+        },
+        "y": {
+          "field": "career_prize_money_usd",
+          "type": "quantitative",
+          "title": "Career Prize Money (USD)",
+          "scale":{"domain":[0,30000000]}
+        },
+        "size": {
+          "field": "career_high_ranking",
+          "type": "quantitative",
+          "scale": {"domain": [100, 1], "range": [50, 2000]},
+          "title": "Career-High Ranking"
+        },
+        "color": {
+          "field": "player",
+          "type": "nominal",
+          "scale": {
+            "range": ["#0057B7", "#FF4081", "#4CAF50", "#FFC107", "#9C27B0"]
+          },
+          "title": "Player"
+        },
+        "tooltip": [
+          {"field": "player", "title": "Player: "},
+          {"field": "career_high_ranking", "title": "Career High Rank: "},
+          {"field": "career_high_date", "title": "Year Achieved: "},
+          {"field": "career_prize_money_usd", "title": "Prize Money (USD): ", "format":","},
+          {"field": "age_years_as_of_2025_10_13", "title": "Current Age: "}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text", 
+        "dy": -10, 
+        "fontSize": 10, 
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "age_years_as_of_2025_10_13", 
+          "type": "quantitative"
+        },
+        "y": {
+          "field": "career_prize_money_usd", 
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "player", 
+          "type": "ordinal"
+        },
+        "color": {"value": "#333"}
+      }
+    }
+  ],
+  "title": {
+    "text": "Australian Players – Age, Prize Money, and Ranking Milestones", "fontSize": 16},
+  "config": {
+    "axis": {"labelFont": "Segoe UI", "titleFont": "Segoe UI"},
+    "view": {"stroke": "transparent"}
+  }
+}

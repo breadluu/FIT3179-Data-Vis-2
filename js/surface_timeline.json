@@ -1,0 +1,74 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "../data/ao_surface_timeline.csv"},
+  "width": 600,
+  "height": 150,
+  "background": "white",
+  "layer": [
+    {
+      "mark": {
+        "type": "rule", 
+        "strokeWidth": 10, 
+        "strokeCap": "round"
+      },
+      "encoding": {
+        "x": {
+          "field": "year_start", 
+          "type": "quantitative", 
+          "title": "Year", 
+          "scale": {"domain": [1905, 2025]}
+        },
+        "x2": {
+          "field": "year_end"
+        },
+        "color": {
+          "field": "surface",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Grass", "Rebound Ace", "Plexicushion", "GreenSet"],
+            "range": ["#81C784", "#FFB74D", "#64B5F6", "#BA68C8"]
+          },
+          "title": "Surface Type"
+        },
+        "tooltip": [
+          {"field": "surface", "title": "Surface Type:"},
+          {"field": "year_start", "title": "Start Year: "},
+          {"field": "year_end", "title": "End Year: "},
+          {"field": "notes", "title": "Notes: "}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "circle", 
+        "size": 200, 
+        "opacity": 1, 
+        "stroke":"black",
+        "strokeWidth": 0.75
+      },
+      "encoding": {
+        "x": {
+          "field": "year_start", 
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "surface",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Grass", "Rebound Ace", "Plexicushion", "GreenSet"],
+            "range": ["#81C784", "#FFB74D", "#64B5F6", "#BA68C8"]
+          }
+        },
+        "tooltip": [
+          {"field": "surface", "title": "Surface Type: "},
+          {"field": "year_start", "title": "Year Start: "}
+        ]
+      }
+    }
+  ],
+  "title": {"text": "Australian Open Surface Timeline", "fontSize": 16},
+  "config": {
+    "view": {"stroke": "transparent"},
+    "axis": {"labelFont": "Segoe UI", "titleFont": "Segoe UI"}
+  }
+}

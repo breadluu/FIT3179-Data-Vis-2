@@ -1,0 +1,27 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "../data/ao_prize_money_2000_2025.csv"},
+  "width": 600,
+  "height": 300,
+  "mark": {
+    "type": "area", 
+    "color": "#4CAF50", 
+    "opacity": 0.7
+  },
+  "encoding": {
+    "x": {
+      "field": "year", 
+      "type": "ordinal"
+    },
+    "y": {
+      "field": "ao_total_prize_money_aud", 
+      "type": "quantitative", 
+      "title": "Prize Money (AUD)"
+    },
+    "tooltip": [
+      {"field": "year", "title": "Year: "},
+      {"field": "ao_total_prize_money_aud", "title": "Prize Money (AUD): ", "format": ","}
+    ]
+  },
+  "title": {"text": "Australian Open Total Prize Money (2015–2025)", "fontSize": 16}
+}

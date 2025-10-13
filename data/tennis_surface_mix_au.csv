@@ -1,0 +1,7 @@
+surface_bucket,count,percent,examples
+unknown,20550,79.13,n/a; n/a; n/a; n/a; n/a
+other,3405,13.11,paved; paved; hard_court; paved; paved
+hard,854,3.29,asphalt; asphalt; acrylic; asphalt; concrete
+artificial_grass,552,2.13,artificial_turf; artificial_turf; artificial_turf; artificial_turf; artificial_turf
+grass,330,1.27,grass; grass; grass; grass_paver; grass
+clay,279,1.07,clay; clay; clay; clay; clay

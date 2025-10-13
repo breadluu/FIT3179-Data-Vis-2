@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "vconcat": [
+    {
+      "data": {"url": "../data/australian_players_gender_distribution_2025.csv"},
+      "mark": {
+        "type": "arc", 
+        "innerRadius": 60
+      },
+      "encoding": {
+        "theta": {
+          "field": "count", 
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "gender",
+          "type": "nominal",
+          "scale": {"range": ["#0057B7", "#FF4081"]},
+          "title": "Gender"
+        },
+        "tooltip": [
+          {"field": "gender", "title": "Gender: "}, 
+          {"field": "count", "title": "# of Players: "}
+        ]
+      },
+      "title": {"text": "Australian Professional Players by Gender (2025)", "fontSize": 16},
+      "view": {"stroke": null}
+    },
+    {
+      "data": {"url": "../data/australian_grand_slam_winners_by_decade.csv"},
+      "mark": {
+        "type": "bar"
+      },
+      "encoding": {
+        "x": {
+          "field": "decade", "type": "ordinal",
+          "title": "Decade",
+          "sort": ["1900s","1910s","1920s","1930s","1940s","1950s","1960s","1970s","1980s","1990s","2000s","2010s","2020s"]
+        },
+        "y": {
+          "field": "count", 
+          "type": "quantitative", 
+          "title": "Grand Slam Singles Titles"
+        },
+        "color": {
+          "field": "gender",
+          "type": "nominal",
+          "scale": {"range": ["#0057B7", "#FF4081"]},
+          "title": "Gender"
+        },
+        "tooltip": [
+          {"field": "decade", "title": "Decade: "}, 
+          {"field": "gender", "title": "Gender: "}, 
+          {"field": "count", "title": "Titles: "}]
+      },
+      "title": {"text": "Australian Grand Slam Singles Winners by Decade", "fontSize": 16},
+      "view": {"stroke": null}
+    }
+  ],
+  "config": {
+    "background": "white",
+    "axis": {"labelFont": "Segoe UI", "titleFont": "Segoe UI"},
+    "view": {"stroke": null}
+  }
+}

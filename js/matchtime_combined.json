@@ -1,0 +1,45 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {"url": "../data/ao2025_avg_match_duration_combined.csv"},
+  "width": 500,
+  "height": 350,
+  "mark": {
+    "type": "line", 
+    "point": true, 
+    "strokeWidth": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "round",
+      "type": "ordinal",
+      "sort": [
+        "First Round",
+        "Second Round",
+        "Third Round",
+        "Fourth Round",
+        "Quarterfinals",
+        "Semifinals",
+        "Final"
+      ],
+      "title": "Tournament Round"
+    },
+    "y": {
+      "field": "average_duration_minutes",
+      "type": "quantitative",
+      "title": "Average Match Duration (minutes)"
+    },
+    "color": {
+      "field": "gender",
+      "type": "nominal",
+      "scale": {"range": ["#0057B7", "#FF4081"]},
+      "title": "Gender"
+    },
+    "tooltip": [
+      {"field": "round", "title": "Round: "},
+      {"field": "gender", "title": "Gender: "},
+      {"field": "average_duration_minutes", "title": "Avg. Time (mins): "}
+    ]
+  },
+  "title": {"text": "AO 2025 – Average Match Duration by Round", "fontSize": 16},
+  "config": {"view": {"stroke": "transparent"}}
+}
