@@ -1,7 +1,5 @@
-// Initialise Lucide icons
 lucide.createIcons();
 
-// Chart JSON specs
 const specs = {
   map: "js/map_chart.json",
   timeline: "js/surface_timeline.json",
@@ -12,7 +10,6 @@ const specs = {
   genderwinners: "js/gender_dist_and_winners.json"
 };
 
-// Embed each Vega-Lite chart
 for (const [id, file] of Object.entries(specs)) {
   vegaEmbed(`#${id}`, file, { actions: false }).catch(console.error);
 }
