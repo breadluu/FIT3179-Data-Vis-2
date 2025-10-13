@@ -3,13 +3,13 @@ lucide.createIcons();
 
 // Chart JSON specs
 const specs = {
-  map: "../js/map_chart.json",
-  timeline: "../js/surface_timeline.json",
-  attendance: "../js/attendance.json",
-  prizemoney: "../js/prize_money.json",
-  bubble: "../js/bubble_chart.json",
-  matchtime: "../js/matchtime_combined.json",
-  genderwinners: "../js/gender_dist_and_winners.json"
+  map: "FIT3179-DATA-VIS-2/js/map_chart.json",
+  timeline: "FIT3179-DATA-VIS-2/js/surface_timeline.json",
+  attendance: "FIT3179-DATA-VIS-2/js/attendance.json",
+  prizemoney: "FIT3179-DATA-VIS-2/js/prize_money.json",
+  bubble: "FIT3179-DATA-VIS-2/js/bubble_chart.json",
+  matchtime: "FIT3179-DATA-VIS-2/js/matchtime_combined.json",
+  genderwinners: "FIT3179-DATA-VIS-2/js/gender_dist_and_winners.json"
 };
 
 // Embed each Vega-Lite chart
