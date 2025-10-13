@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "vconcat": [
     {
-      "data": {"url": "../data/australian_players_gender_distribution_2025.csv"},
+      "data": {"url": "data/australian_players_gender_distribution_2025.csv"},
       "mark": {
         "type": "arc", 
         "innerRadius": 60
@@ -27,7 +27,7 @@
       "view": {"stroke": null}
     },
     {
-      "data": {"url": "../data/australian_grand_slam_winners_by_decade.csv"},
+      "data": {"url": "data/australian_grand_slam_winners_by_decade.csv"},
       "mark": {
         "type": "bar"
       },

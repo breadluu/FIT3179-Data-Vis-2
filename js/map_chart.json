@@ -11,7 +11,7 @@
   "layer": [
     {
       "data": {
-        "url": "../js/australia_states.topojson",
+        "url": "js/australia_states.topojson",
         "format": {"type": "topojson", "feature": "STE_2021_AUST_GDA2020"}
       },
       "mark": {
@@ -35,7 +35,7 @@
       }
     },
     {
-      "data": {"url": "../data/state_labels.csv"},
+      "data": {"url": "data/state_labels.csv"},
       "mark": {
         "type": "text",
         "font": "Segoe UI",
@@ -50,7 +50,7 @@
       }
     },
     {
-      "data": {"url": "../data/au_tennis_venues.csv"},
+      "data": {"url": "data/au_tennis_venues.csv"},
       "mark": {
         "type": "circle", 
         "color": "#0057B7", 

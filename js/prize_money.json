@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "../data/ao_prize_money_2000_2025.csv"},
+  "data": {"url": "data/ao_prize_money_2000_2025.csv"},
   "width": 600,
   "height": 300,
   "mark": {

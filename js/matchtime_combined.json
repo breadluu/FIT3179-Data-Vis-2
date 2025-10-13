@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "../data/ao2025_avg_match_duration_combined.csv"},
+  "data": {"url": "data/ao2025_avg_match_duration_combined.csv"},
   "width": 500,
   "height": 350,
   "mark": {
