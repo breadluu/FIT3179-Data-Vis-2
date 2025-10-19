@@ -1,12 +1,15 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 700,
+  "width": 600,
   "height": 500,
   "background": "white",
   "projection": {
     "type": "mercator", 
     "center": [134, -25], 
     "scale": 600
+  },
+  "resolve": {
+    "scale": {"color": "independent"}
   },
   "layer": [
     {
@@ -50,25 +53,46 @@
       }
     },
     {
-      "data": {"url": "data/au_tennis_venues.csv"},
-      "mark": {
-        "type": "circle", 
-        "color": "#0057B7", 
-        "opacity": 0.9, 
-        "size": 120
+  "data": {"url": "data/au_tennis_venues.csv"},
+  "mark": {
+    "type": "circle", 
+    "opacity": 0.9,
+    "stroke": "#000000", 
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "longitude": {
+      "field": "longitude", 
+      "type": "quantitative"
+    },
+    "latitude": {
+      "field": "latitude", 
+      "type": "quantitative"
+    },
+    "color": {
+      "field": "surface",
+      "type": "nominal",
+      "title": "Surface Type/s"
+    },
+    "size": {
+      "field": "tier",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Grand Slam", "International", "National", "Exhibition", "Community"],
+        "range": [400, 80]
       },
-      "encoding": {
-        "longitude": {"field": "longitude", "type": "quantitative"},
-        "latitude": {"field": "latitude", "type": "quantitative"},
-        "tooltip": [
-          {"field": "venue","title":"Venue: "},
-          {"field": "city","title":"City: "},
-          {"field": "state","title":"State: "},
-          {"field": "surface","title":"Surface Type: "},
-          {"field": "notes", "title": "Venue Uses: "}
-        ]
-      }
-    }
+      "legend": {"title": "Venue Tier"}
+    },
+    "tooltip": [
+      {"field": "venue", "title": "Venue: "},
+      {"field": "city", "title": "City: "},
+      {"field": "state", "title": "State"},
+      {"field": "surface", "title": "Surface Type/s: "},
+      {"field": "notes", "title": "Venue Uses: "},
+      {"field": "tier", "title": "Tier: "}
+    ]
+  }
+}
   ],
   "title": {"text": "Major Tennis Venues Across Australia", "fontSize": 16},
   "config": {"view": {"stroke": "transparent"}}

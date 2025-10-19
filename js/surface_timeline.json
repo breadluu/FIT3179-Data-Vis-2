@@ -16,7 +16,8 @@
           "field": "year_start", 
           "type": "quantitative", 
           "title": "Year", 
-          "scale": {"domain": [1905, 2025]}
+          "scale": {"domain": [1905, 2025]},
+          "axis": {"format": "d"}
         },
         "x2": {
           "field": "year_end"

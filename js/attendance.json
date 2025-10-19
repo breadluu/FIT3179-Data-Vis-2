@@ -1,28 +1,52 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "data/ao_attendance_2000_2025.csv"},
+  "data": {"url": "data/ao_attendance_2015_2025.csv"},
   "width": 600,
   "height": 300,
-  "mark": {
-    "type": "line",
-    "color": "#4CAF50", 
-    "point": true
-  },
-  "encoding": {
-    "x": {
-      "field": "year", 
-      "type": "ordinal", 
-      "title": "Year"
+  "layer": [
+    {    
+      "mark": {
+        "type": "line",
+        "color": "#4CAF50", 
+        "point": true
+      },
+      "encoding": {
+        "x": {
+          "field": "year", 
+          "type": "quantitative", 
+          "title": "Year",
+          "axis": {"format": "d"}
+        },
+        "y": {
+          "field": "ao_total_attendance", 
+          "type": "quantitative", 
+          "title": "Total Attendance"
+        },
+        "tooltip": [
+          {"field": "year", "title": "Year: "},
+          {"field": "ao_total_attendance", "title": "Attendance: ", "format":","}
+        ]
+      }
     },
-    "y": {
-      "field": "ao_total_attendance", 
-      "type": "quantitative", 
-      "title": "Total Attendance"
-    },
-    "tooltip": [
-      {"field": "year", "title": "Year: "},
-      {"field": "ao_total_attendance", "title": "Attendance: ", "format":","}
-    ]
-  },
+    {
+      "data": {
+        "values": [
+          {"year": 2021, "attendance": 130374, "label": "COVID-19 Restrictions"}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "fontWeight": "bold",
+        "align": "left",
+        "dx": 10,
+        "color": "#D62828"
+      },
+      "encoding": {
+        "x": {"field": "year", "type": "quantitative"},
+        "y": {"field": "attendance", "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    }
+  ],
   "title": {"text": "Australian Open Attendance (2015–2025)", "fontSize": 16}
 }

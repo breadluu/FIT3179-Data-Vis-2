@@ -20,6 +20,39 @@ body::before {
   z-index: -1;
 }
 
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.intro-text {
+  max-width: 800px;
+}
+
+.intro-text h2 {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  margin: 0 auto;
+}
+
 
 header {
   text-align: center;

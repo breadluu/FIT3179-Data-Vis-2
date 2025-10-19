@@ -1,17 +1,19 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "data": {"url": "data/ao_prize_money_2000_2025.csv"},
+  "data": {"url": "data/ao_prize_money_2015_2025.csv"},
   "width": 600,
   "height": 300,
   "mark": {
-    "type": "area", 
+    "type": "line", 
     "color": "#4CAF50", 
     "opacity": 0.7
   },
   "encoding": {
     "x": {
       "field": "year", 
-      "type": "ordinal"
+      "type": "quantitative",
+      "title": "Year",
+      "axis": {"format": "d"}
     },
     "y": {
       "field": "ao_total_prize_money_aud", 

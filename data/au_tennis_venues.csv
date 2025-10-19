@@ -1,12 +1,33 @@
-venue,city,state,latitude,longitude,surface,notes
-Rod Laver Arena,Melbourne,VIC,-37.8213,144.978,Hard,Melbourne Park
-Margaret Court Arena,Melbourne,VIC,-37.8228,144.9759,Hard,Melbourne Park
-John Cain Arena,Melbourne,VIC,-37.8201,144.9783,Hard,Melbourne Park
-Kia Arena,Melbourne,VIC,-37.8199,144.9801,Hard,Melbourne Park
-Ken Rosewall Arena,Sydney,NSW,-33.8475,151.0703,Hard,Sydney Olympic Park
-Pat Rafter Arena,Brisbane,QLD,-27.4868,153.025,Hard,Queensland Tennis Centre
-Memorial Drive Centre Court,Adelaide,SA,-34.9151,138.599,Hard,Memorial Drive Tennis Centre
-Domain Tennis Centre,Hobart,TAS,-42.8729,147.3266,Hard,Hobart International venue
-Canberra Tennis Centre,Canberra,ACT,-35.2384,149.1296,Hard,Lyneham
-Darwin International Tennis Centre,Darwin,NT,-12.3946,130.875,Hard,NT Tennis Centre
-Perth Arena (RAC Arena),Perth,WA,-31.9484,115.8526,Hard,Hopman Cup venue
+venue,city,state,latitude,longitude,surface,notes,tier
+Broadview Tennis Club,Adelaide,SA,-34.874,138.599,Hard,Community club currently undergoing upgrade to become tier-two elite venue hosting national tournaments.,Community
+Burnie International Tennis Centre,Burnie,TAS,-41.0561,145.9032,Hard,Hosts the Burnie International (ATP Challenger/ITF) and regional tennis events.,National
+Canberra Tennis Centre,Canberra,ACT,-35.2653,149.1324,Hard,Hosts Canberra International and national junior tournaments.,National
+Cottesloe Tennis Club,Perth,WA,-31.9918,115.7517,Hard/Grass,Historic community club known for grass tournaments and recreational play.,Community
+Darwin International Tennis Centre,Darwin,NT,-12.4256,130.8928,Hard,Hosts Pro Tour events and community programs; NT’s main tennis complex.,National
+Domain Tennis Centre,Hobart,TAS,-42.8821,147.323,Hard/Clay/Synthetic Grass,Home of the Hobart International (WTA); also local training and community use.,International
+Hope Island Resort Tennis Centre,Gold Coast,QLD,-27.981,153.402,Hard,Hosts international doubles championships and resort-level elite tennis events.,Community
+John Cain Arena,Melbourne,VIC,-37.829,144.977,Hard,Part of Melbourne Park; secondary Australian Open show court and entertainment venue.,Grand Slam
+Kia Arena (Show Court Arena),Melbourne,VIC,-37.8198,144.9783,Hard,Newest addition at Melbourne Park; mid-sized venue for AO and other sporting events.,Grand Slam
+Kooyong Stadium,Melbourne,VIC,-37.8435,145.0099,Hard,Historic home of the Australian Open until 1987; now hosts the Kooyong Classic exhibition.,Exhibition
+Launceston Tennis International Complex,Launceston,TAS,-41.434,147.137,Hard,Hosts Launceston International (ATP Challenger / ITF); key Tasmanian tennis venue.,National
+Margaret Court Arena,Melbourne,VIC,-37.821,144.978,Hard,Used for Australian Open matches and concerts; retractable roof facility.,Grand Slam
+Milton Courts,Brisbane,QLD,-27.4667,153.0333,Hard/Grass,Former major Brisbane tennis venue; now used for community tennis and state tournaments.,Community
+Northcote Tennis Club,Melbourne,VIC,-37.7748,144.9903,Synthetic Grass,Historic Melbourne club known for high-performance training and local tournaments.,Community
+NSW Tennis Centre (Ken Rosewall Arena),Sydney,NSW,-33.853,151.07,Hard,Hosts the Sydney International and United Cup; key training facility for NSW players.,International
+Parramatta Park Tennis Centre,Parramatta,NSW,-33.817,151.003,Hard,Large NSW metropolitan tennis facility used for state championships and community programs.,National
+Pat Rafter Arena,Brisbane,QLD,-27.458,153.05,Hard,Main court of the Queensland Tennis Centre; used for Brisbane International and national events.,International
+Perth Tennis Centre,Perth,WA,-31.9333,115.8616,Hard,State-level tournaments and junior training hub,National
+Playford Tennis Centre,Elizabeth East,SA,-34.755,138.619,Hard,South Australian venue being developed for national junior & challenger tournaments.,National
+Queensland Tennis Centre,Tennyson (Brisbane),QLD,-27.4859,153.0179,Hard/Clay/Grass,Hosts ATP Challenger events; primary tennis hub in Queensland with multiple outdoor courts.,International
+RAC Arena (Perth Arena),Perth,WA,-31.9522,115.8605,Hard,Multipurpose indoor venue that hosted the Hopman Cup and concerts; can convert to tennis setup.,International
+Rod Laver Arena,Melbourne,VIC,-37.8216,144.9783,Hard,Central show court of the Australian Open; retractable roof stadium.,Grand Slam
+Rottnest Island Tennis Club,Rottnest Island,WA,-32.006,115.541,Grass,Scenic island club with grass-courts; popular for corporate and holiday tennis events.,Community
+Royal King’s Park Tennis Club,Perth,WA,-31.9596,115.8354,Hard/Grass,Major Western Australian club with multiple courts and elite training facilities.,National
+Royal Melbourne Tennis Club,Melbourne,VIC,-37.8327,144.9454,Hard/Clay,Prestigious private tennis club with heritage courts and national grass-court events.,Exhibition
+Southport Tennis Club,Gold Coast,QLD,-27.9739,153.413,Hard/Synthetic Grass,Major Queensland club used for off-season training and national coaching camps.,Community
+Sunshine Coast Tennis Club,Maroochydore,QLD,-26.657,153.083,Hard/Grass/Synthetic Grass,Regional Queensland facility supporting elite juniors and hosting national tournaments.,Community
+The Drive (Memorial Drive Tennis Centre),Adelaide,SA,-34.9285,138.6176,Hard/Grass/Synthetic Grass,Hosts Adelaide International tournaments; major South Australian tennis facility.,International
+Wagga Wagga Tennis Centre,Wagga Wagga,NSW,-35.1315,147.3582,Hard/Synthetic Grass,Regional hub for southern NSW juniors; hosting national junior and Oztag-style tennis competitions.,Community
+White City Tennis Club,Sydney,NSW,-33.8775,151.205,Hard/Grass/Synthetic Grass,Historic venue that hosted the Australian Open in earlier eras; now a key social and competition club.,Exhibition
+Winmalee Tennis Centre,Winmalee,NSW,-33.772,150.458,Hard,Blue Mountains regional facility used for state tournaments and high-performance training in NSW.,Community
+Wollongong Tennis Club,Wollongong,NSW,-34.4278,150.9,Hard/Grass/Synthetic Grass,Coastal NSW tennis facility hosting state-level events and community leagues.,Community

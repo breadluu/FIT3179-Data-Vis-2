@@ -11,7 +11,7 @@
   "encoding": {
     "x": {
       "field": "round",
-      "type": "ordinal",
+      "type": "nominal",
       "sort": [
         "First Round",
         "Second Round",
@@ -31,7 +31,7 @@
     "color": {
       "field": "gender",
       "type": "nominal",
-      "scale": {"range": ["#0057B7", "#FF4081"]},
+      "scale": {"range": ["#B388EB", "#F4A261"]},
       "title": "Gender"
     },
     "tooltip": [

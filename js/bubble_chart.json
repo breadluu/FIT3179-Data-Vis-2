@@ -10,13 +10,14 @@
         "type": "circle", 
         "opacity": 0.8, 
         "stroke": "#fff", 
-        "strokeWidth": 1},
+        "strokeWidth": 1
+      },
       "encoding": {
         "x": {
           "field": "age_years_as_of_2025_10_13",
           "type": "quantitative",
           "title": "Age (Years)",
-          "scale":{"domain":[23,34]}
+          "scale":{"domain":[23,33]}
         },
         "y": {
           "field": "career_prize_money_usd",
@@ -27,16 +28,17 @@
         "size": {
           "field": "career_high_ranking",
           "type": "quantitative",
-          "scale": {"domain": [100, 1], "range": [50, 2000]},
+          "scale": {
+            "domain": [150, 100, 50, 1], 
+            "range": [50, 500]
+          },
           "title": "Career-High Ranking"
         },
         "color": {
           "field": "player",
           "type": "nominal",
-          "scale": {
-            "range": ["#0057B7", "#FF4081", "#4CAF50", "#FFC107", "#9C27B0"]
-          },
-          "title": "Player"
+          "title": "Player",
+          "legend": null
         },
         "tooltip": [
           {"field": "player", "title": "Player: "},
