@@ -3,11 +3,38 @@
   "width": 600,
   "height": 500,
   "background": "white",
-  "projection": {
-    "type": "mercator", 
-    "center": [134, -25], 
-    "scale": 600
+  "params": [
+    {
+      "name": "stateFilter",
+      "value": "All",
+      "bind": {
+        "input": "select",
+        "options": [
+          "All", "ACT", "NSW", "NT", "QLD", "SA", "TAS", "VIC", "WA"
+        ],
+        "labels": [
+          "All States", 
+          "Australian Capital Territory",
+          "New South Wales",
+          "Northern Territory",
+          "Queensland",
+          "South Australia", 
+          "Tasmania",
+          "Victoria",
+          "Western Australia"
+        ],
+        "name": "Select State: "
+      }
+    }
+  ],
+"projection": {
+  "type": "mercator",
+  "center": {
+    "expr": "(stateFilter=='VIC') ? [145,-37] : (stateFilter=='NSW') ? [147,-33.5] : (stateFilter=='QLD') ? [147.5,-21.5] : (stateFilter=='WA') ? [121,-25] : (stateFilter=='SA') ? [136,-30] : (stateFilter=='TAS') ? [147.3,-42] : (stateFilter=='NT') ? [133,-19] : (stateFilter=='ACT') ? [149,-35.3] : [134,-25]"
   },
+  "scale": { "expr": "stateFilter == 'All' ? 600 : 1800" },
+  "translate": [350, 250]
+},
   "resolve": {
     "scale": {"color": "independent"}
   },
