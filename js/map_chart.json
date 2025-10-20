@@ -30,7 +30,7 @@
 "projection": {
   "type": "mercator",
   "center": {
-    "expr": "(stateFilter=='VIC') ? [145,-37] : (stateFilter=='NSW') ? [147,-33.5] : (stateFilter=='QLD') ? [147.5,-21.5] : (stateFilter=='WA') ? [121,-25] : (stateFilter=='SA') ? [136,-30] : (stateFilter=='TAS') ? [147.3,-42] : (stateFilter=='NT') ? [133,-19] : (stateFilter=='ACT') ? [149,-35.3] : [134,-25]"
+    "expr": "(stateFilter=='VIC') ? [145,-37] : (stateFilter=='NSW') ? [147,-33.5] : (stateFilter=='QLD') ? [147.5,-21.5] : (stateFilter=='WA') ? [121,-27] : (stateFilter=='SA') ? [136,-30] : (stateFilter=='TAS') ? [147.3,-42] : (stateFilter=='NT') ? [133,-19] : (stateFilter=='ACT') ? [149,-35.3] : [134,-25]"
   },
   "scale": { "expr": "stateFilter == 'All' ? 600 : 1800" },
   "translate": [350, 250]
